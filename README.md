@@ -18,3 +18,5 @@ Functionality:
 
 All the data are available on a Django Dashboard that i will open source soon ping me if you need now( ankitsinha611@gmail.com ).
 
+Blog:  https://www.meshcookie.com/how-i-built-a-covid-19-tracker-android-app-using-bluetooth-aarogya-setu-alike-app/
+
