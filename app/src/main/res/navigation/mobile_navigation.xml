@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="in.tagbin.covid_tracker.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="in.tagbin.covid_tracker.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_home_second_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="in.tagbin.covid_tracker.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="in.tagbin.covid_tracker.ui.add_pass.AddViewPageFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_add_view_page" />
+    <fragment
+        android:id="@+id/nav_faq"
+        android:name="in.tagbin.covid_tracker.ui.faq.FaqFragment"
+        android:label="@string/menu_faq"
+        tools:layout="@layout/faq_fragment" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="in.tagbin.covid_tracker.ui.profile.profileFragment"
+        android:label="@string/menu_faq"
+        tools:layout="@layout/faq_fragment" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="in.tagbin.covid_tracker.SettingsFragment"
+        android:label="@string/settings_menu"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_debug"
+        android:name="in.tagbin.covid_tracker.DebugFragment"
+        android:label="@string/menu_fadscq"
+        tools:layout="@layout/fragment_debug" />
+
+
+</navigation>

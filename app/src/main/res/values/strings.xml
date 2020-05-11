@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">CO-CARE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ankit Sinha</string>
+    <string name="nav_header_subtitle"></string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Diagnose</string>
+    <string name="menu_slideshow">E-Pass</string>
+    <string name="menu_faq">FAQ</string>
+
+    <string name="home_second">Home Second</string>
+
+
+    <string name="notification_text">Your shield against Corona virus.</string>
+    <string name="transport_id" translatable="false">123</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="firebase_email" translatable="false">ankit@tagbin.in</string>
+    <string name="firebase_password" translatable="false">123456</string>
+
+    <string name="facebook_app_id">203984020873092</string>
+    <string name="fb_login_protocol_scheme">fb203984020873092</string>
+
+    <string name="title_activity_splash">Co Care</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+    <string name="firebase_status_fmt">Firebase UID: %s</string>
+
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="Home_uper_title">Prevent COVID-19</string>
+    <string name="virus_descriptiob">virus_image</string>
+    <string name="quick_stats">Live Tracker - India</string>
+    <string name="below_quick_stats">Help you prevent Viruses better</string>
+    <string name="pas_desc">Laboratory Confirmed Cases</string>
+    <string name="act_desc">Total Death</string>
+    <string name="cured_desc">Cured/Discharged Patients</string>
+    <string name="apply_fro_e_pass_title">Apply for E-Pass</string>
+    <string name="category">Category</string>
+    <string name="pirates">EMERGENCY</string>
+    <string name="esp">ESSENTIAL SERVICES</string>
+    <string name="e_pass_from_text">Coming from</string>
+    <string name="e_pass_to">Going to</string>
+    <string name="e_pass_time_slot">Timeslot</string>
+    <string name="reason">Purpose of E-Pass</string>
+    <string name="add_pass">Request New Pass</string>
+    <string name="dcoument_uplod_hint">Upload Supporting Documents*</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="date_title">Date</string>
+    <string name="selectdate_text">Select Date</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ciew_add_epass">E - Pass</string>
+    <string name="question1">What is a coronavirus?</string>
+    <string name="answer1">Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.</string>
+    <string name="faq_text">"FAQ "</string>
+    <string name="diagnose_title">Diagnose</string>
+    <string name="logout">Logout</string>
+    <string name="profile_header">Profile</string>
+    <string name="full_name">Fullname</string>
+    <string name="email_placeholder">Email</string>
+    <string name="mobile_placeholder">Mobile </string>
+    <string name="gender_placeholder">Gender</string>
+    <string name="male_placeholder">Male</string>
+    <string name="female_placeholder">Female</string>
+    <string name="menu_fadscq">Debug</string>
+    <string name="debug_menu">Debug</string>
+    <string name="settings_menu">Settings</string>
+    <string name="location_tracking_title">Location Tracking</string>
+    <string name="contact_sync_title">Sync Contact Data</string>
+    <string name="district_placeholder">District</string>
+    <string name="tehsil_placeholder">Tehsil</string>
+    <string name="adress_placeholder">Address</string>
+    <string name="vechile_placeholder">Vechile No.</string>
+
+</resources>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBlue">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/apply_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/diagnose_title"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/diagnose_icon"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/e_pass_icon"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintStart_toEndOf="@+id/apply_title"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/report_icon" />
+
+    <TextView
+        android:id="@+id/diagnose_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnose_icon" />
+
+    <RadioGroup
+        android:id="@+id/answers_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnose_question">
+
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/root_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="3dp"
+            android:text="Yourself"
+            android:textColor="@drawable/radio_flat_text_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/root_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3sp"
+            android:paddingRight="12dp"
+            android:paddingBottom="3dp"
+            android:text="Parents"
+            android:textColor="@drawable/radio_flat_text_selector"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/root_flat_selector"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingTop="3sp"
+            android:paddingRight="12dp"
+            android:paddingBottom="3dp"
+            android:text="Child"
+            android:textColor="@drawable/radio_flat_text_selector"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/next_question_button"
+        android:layout_width="330dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/submit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answers_button"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <CheckBox
+        android:id="@+id/diabetese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Diabetes"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnose_question" />
+
+    <CheckBox
+        android:id="@+id/highBloodPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="High Blood Pressure"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diabetese" />
+
+    <CheckBox
+        android:id="@+id/heartDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Heart Disease"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highBloodPressure" />
+
+    <CheckBox
+        android:id="@+id/lungDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Lung Disease"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kidneyDisease" />
+
+    <CheckBox
+        android:id="@+id/reducedImmunity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Reduced Immunity"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stroke" />
+
+    <CheckBox
+        android:id="@+id/noneofTheAbove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="None of the Above"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reducedImmunity" />
+
+    <CheckBox
+        android:id="@+id/stroke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Stroke"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lungDisease" />
+
+    <CheckBox
+        android:id="@+id/kidneyDisease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Kidney Disease"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heartDisease" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="25dp"
+        android:progress="0"
+        android:progressTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diagnose_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

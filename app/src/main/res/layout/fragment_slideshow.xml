@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ec="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ramotion.expandingcollection.ECBackgroundSwitcherView
+        android:id="@+id/ec_bg_switcher_element"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="@drawable/background_gradient">
+
+    </com.ramotion.expandingcollection.ECBackgroundSwitcherView>
+
+    <com.ramotion.expandingcollection.ECPagerView
+        android:id="@+id/ec_pager_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        ec:cardHeaderHeightExpanded="350dp"
+        ec:cardHeight="200dp"
+        ec:cardWidth="250dp" >
+
+    </com.ramotion.expandingcollection.ECPagerView>
+
+</RelativeLayout>
